@@ -57,9 +57,11 @@ function setupScroller() {
   }
 
   window.addEventListener("mousedown", (event) => {
-    if(event.buttons !== 4) {
+    const isLinkClicked = !!event.target.closest("a")
+    if(event.buttons !== 4 || isLinkClicked) {
       return
     }
+
     toggleCursorStyle()
     data.scrollChangingValue = 0
 
