@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WHEELY: Wheel scroll for Linux",
   "short_name": "WHEELY",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Add ability for Linux to scroll pages by pressing mouse wheel.",
   "permissions": [
     "storage"
