@@ -4,6 +4,9 @@
   "short_name": "WHEELY",
   "version": "1.0",
   "description": "Add ability for Linux to scroll pages by pressing mouse wheel.",
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "js": ["content.js"],
@@ -12,5 +15,11 @@
       ]
     }
   ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "wheely-icon.png"
+    }
+  },
   "offline_enabled": true
 }
